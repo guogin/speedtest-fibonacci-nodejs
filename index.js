@@ -50,4 +50,4 @@ class Fibonacci {
 
 // Main
 let fib = new Fibonacci();
-console.log(fib.recursive_no_optimization(40));
+console.log(fib.recursive_no_optimization(30));
