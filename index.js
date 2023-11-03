@@ -21,6 +21,14 @@ class Fibonacci {
         return memory[n];
     }
 
+    recursive_no_optimization(n) {
+        if (n < 2) {
+            return BigInt(n);
+        }
+
+        return this.recursive_no_optimization(n-1) + this.recursive_no_optimization(n-2);
+    }
+
     iterative(n) {
         if (n < 2) {
             return BigInt(n);
@@ -42,4 +50,4 @@ class Fibonacci {
 
 // Main
 let fib = new Fibonacci();
-console.log(fib.recursive(100));
+console.log(fib.recursive_no_optimization(40));
