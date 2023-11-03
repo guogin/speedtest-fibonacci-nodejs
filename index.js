@@ -9,11 +9,11 @@ class Fibonacci {
     }
 
     _recursive(n, memory) {
-        if (n < 2) {
-            memory[n] = BigInt(n);
+        if (memory[n] != undefined) {
             return memory[n];
         }
-        if (memory[n] != undefined) {
+        if (n < 2) {
+            memory[n] = BigInt(n);
             return memory[n];
         }
 
